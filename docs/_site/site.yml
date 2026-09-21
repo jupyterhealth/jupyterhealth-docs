@@ -1,0 +1,24 @@
+# Shared navbar and footer for all JupyterHealth docs sites.
+# Other sites include this with:
+#   extends:
+#     - https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/site.yml
+# All links are absolute URLs so they resolve from any site.
+version: 1
+site:
+  template: book-theme
+  options:
+    logo: https://jupyterhealth.github.io/images/JH_logo_2.png
+    logo_url: https://jupyterhealth-docs.readthedocs.io
+    logo_text: JupyterHealth
+  nav:
+    - title: Exchange
+      url: https://jupyterhealth.github.io/software-documentation/
+    - title: Client library
+      url: https://jupyterhealth-client.readthedocs.io
+    - title: Hub
+      url: https://jupyterhealth-hub.readthedocs.io/en/latest/
+    - title: Demos
+      url: https://jupyterhealth.github.io/demos/
+  parts:
+    # Raw GitHub URL so the footer resolves for sites that extend this file.
+    footer: https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/footer.md

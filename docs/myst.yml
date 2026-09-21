@@ -1,0 +1,17 @@
+version: 1
+extends:
+  - ./_site/site.yml
+project:
+  title: JupyterHealth Docs
+  github: https://github.com/jupyterhealth/jupyterhealth-docs
+  plugins:
+    - https://github.com/jupyter-book/myst-plugins/releases/download/footer-latest/index.mjs
+  toc:
+    - file: index.md
+    - file: about.md
+    - file: ecosystem.md
+    - file: community.md
+    - file: glossary.md
+site:
+  parts:
+    footer: _site/footer.md
