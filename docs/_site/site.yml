@@ -9,8 +9,10 @@ site:
   options:
     logo: https://jupyterhealth.github.io/images/JH_logo_2.png
     logo_url: https://jupyterhealth-docs.readthedocs.io
-    logo_text: JupyterHealth
+    logo_text: Docs
   nav:
+    - title: Docs
+      url: https://jupyterhealth-docs.readthedocs.io
     - title: Exchange
       url: https://jupyterhealth.github.io/software-documentation/
     - title: Client library
