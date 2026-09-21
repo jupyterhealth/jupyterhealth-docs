@@ -4,8 +4,6 @@ extends:
 project:
   title: JupyterHealth Docs
   github: https://github.com/jupyterhealth/jupyterhealth-docs
-  plugins:
-    - https://github.com/jupyter-book/myst-plugins/releases/download/footer-latest/index.mjs
   toc:
     - file: index.md
     - file: about.md
@@ -14,4 +12,5 @@ project:
     - file: glossary.md
 site:
   parts:
+    navbar_end: _site/navbar_end.md
     footer: _site/footer.md

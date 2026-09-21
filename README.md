@@ -14,10 +14,11 @@ Preview locally with [nox](https://nox.thea.codes):
 nox -s docs:live
 ```
 
-## Shared navbar and footer
+## Shared navbar, footer, and plugins
 
 This is a MyST site, and provides [shared MyST configuration](https://mystmd.org/guide/configuration#composing-myst-yml) that other documentation sites can use.
 Find those in: `docs/_site/site.yml`.
+It sets the theme, logo, navbar, footer, and a few plugins (footer, iconify, listing, gui-text).
 
 To reuse that configuration in another MyST site, add this to its `myst.yml`:
 
@@ -26,9 +27,6 @@ extends:
   - https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/site.yml
 ```
 
-The footer needs the footer plugin, so also add it to the site's `project.plugins`:
+Plugins listed there are merged with the site's own `project.plugins`.
 
-```yaml
-plugins:
-  - https://github.com/jupyter-book/myst-plugins/releases/download/footer-latest/index.mjs
-```
+If the site defines its own `site.parts`, it replaces the shared parts (navbar icons and footer), so copy the ones you want to keep from `docs/_site/site.yml`.

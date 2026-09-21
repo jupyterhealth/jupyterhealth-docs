@@ -1,9 +1,15 @@
-# Shared navbar and footer for all JupyterHealth docs sites.
+# Shared navbar, footer, and plugins for all JupyterHealth docs sites.
 # Other sites include this with:
 #   extends:
 #     - https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/site.yml
 # All links are absolute URLs so they resolve from any site.
 version: 1
+project:
+  plugins:
+    - https://github.com/jupyter-book/myst-plugins/releases/download/footer-latest/index.mjs
+    - https://github.com/myst-contrib/myst-iconify/releases/latest/download/index.mjs
+    - https://github.com/myst-contrib/myst-listing/releases/latest/download/plugin.mjs
+    - https://github.com/myst-contrib/myst-gui-text/releases/latest/download/index.mjs
 site:
   template: book-theme
   options:
@@ -22,5 +28,6 @@ site:
     - title: Demos
       url: https://jupyterhealth.github.io/demos/
   parts:
-    # Raw GitHub URL so the footer resolves for sites that extend this file.
+    # Raw GitHub URLs so the parts resolve for sites that extend this file.
+    navbar_end: https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/navbar_end.md
     footer: https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/footer.md
