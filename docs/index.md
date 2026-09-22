@@ -20,6 +20,12 @@ Read [About the project](about.md) for its origins and primary materials.
 These pages describe what the project is building toward. Some pieces are further along than others.
 :::
 
+## Get access
+
+To try JupyterHealth, [sign up for the demo Exchange](https://jupyterhealth-hub.readthedocs.io/en/latest/sign-up/) and then [log in to the demo Hub](https://jupyterhealth-hub.readthedocs.io/en/latest/log-in/).
+The demo Exchange and Hub are hosted at UC Berkeley.
+Other institutions may set up access differently, for example by connecting their own Exchange to an existing computing environment instead of a Hub.
+
 ## What do you want to do?
 
 ::::{grid} 1 1 2 2
