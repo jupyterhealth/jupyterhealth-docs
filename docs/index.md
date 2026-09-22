@@ -13,6 +13,34 @@ It has three main pieces:
 - The {term}`Hub` is where researchers and data scientists analyze that data, and the platform for building and deploying dashboards and apps for clinicians and other downstream users.
 - The {term}`client library` reads Exchange data from Python for analysis and re-use.
 
+Here's a diagram of the major workflow we want to enable.[^1]
+
+[^1]: Adapted from the [JupyterHealth integration page](https://jupyterhealth.org/#integration).
+
+
+```{mermaid}
+flowchart BT
+  sources["<b>DATA SOURCES</b><br>EHRs · devices · sensors · apps · surveys"]
+  subgraph platform["<b>JupyterHealth Platform</b>"]
+    direction BT
+    exchange["<b>EXCHANGE</b><br>Ingestion · Standardization · Storage"]
+    hub["<b>HUB</b><br>JupyterAI · Notebooks · Dashboards · APIs"]
+    exchange ~~~ hub
+  end
+  subgraph outputs[" "]
+    discovery["Discovery"]
+    decision["Decision support"]
+    care["Remote care"]
+  end
+  sources --> platform --> outputs
+  %% Translucent fills so the diagram works in light and dark mode
+  classDef jh fill:#f0702c1a,stroke:#f0702c
+  classDef neutral fill:#8881,stroke:#888
+  class platform,hub,exchange jh
+  class sources,discovery,decision,care neutral
+  style outputs fill:none,stroke:none
+```
+
 This site describes the project at a high level and points to each component's documentation.
 Read [About the project](about.md) for its origins and primary materials.
 
