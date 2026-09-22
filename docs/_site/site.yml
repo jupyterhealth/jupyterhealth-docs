@@ -13,7 +13,8 @@ project:
 site:
   template: book-theme
   options:
-    logo: https://jupyterhealth.github.io/images/JH_logo_2.png
+    logo: https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/logo.png
+    logo_dark: https://raw.githubusercontent.com/jupyterhealth/jupyterhealth-docs/main/docs/_site/logo-dark.png
     logo_url: https://jupyterhealth-docs.readthedocs.io
     logo_text: Docs
   nav:
