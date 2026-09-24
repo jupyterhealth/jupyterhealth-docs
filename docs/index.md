@@ -13,7 +13,22 @@ It has three main pieces:
 - The {term}`Hub` is where researchers and data scientists analyze that data, and the platform for building and deploying dashboards and apps for clinicians and other downstream users.
 - The {term}`client library` reads Exchange data from Python for analysis and re-use.
 
-Here's a diagram of the major workflow we want to enable.[^1]
+## Try JupyterHealth: Berkeley demo
+
+You can try JupyterHealth using the Berkeley demo Exchange and Hub. The Exchange contains sample data that you can explore in a notebook on the Hub. You'll need an invite code to create an account. If you weren't given one, ask in the [#jupyterhealth Zulip channel](https://jupyter.zulipchat.com/#narrow/channel/531270-jupyterhealth).
+
+**Getting started takes two steps:**
+
+1. Create an account on the [Berkeley demo Exchange](https://berkeley-jhe-demo.jupyterhealth.org/) using your invite code.
+2. Open the [Berkeley demo Hub](https://jupyter-health.2i2c.cloud/) to use JupyterLab, where you can create notebooks and use the AI chat interface.
+
+From there, follow the [Explore your data guide](https://jupyterhealth-hub.readthedocs.io/en/latest/run-an-analysis/) to start with a blank notebook or [open the CGM example notebook](https://jupyter-health.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fjupyterhealth%2Fdemos&urlpath=lab%2Ftree%2Fdemos%2Fdashboards%2Fresearcher-view-cgm.ipynb&branch=main) to add it to your Hub workspace.
+
+These instructions and links are specific to the Berkeley demo. If you’re using JupyterHealth through another institution, it may have its own Exchange and Hub, or connect its to Exchange using a different computational environment. Use the URLs and access instructions provided by your institution.
+
+## How JupyterHealth works
+
+The diagram shows the broader workflow that JupyterHealth aims to support.[^1]
 
 [^1]: Adapted from the [JupyterHealth integration page](https://jupyterhealth.org/#integration).
 
@@ -47,12 +62,6 @@ Read [About the project](about.md) for its origins and primary materials.
 :::{note} JupyterHealth is under active development
 These pages describe what the project is building toward. Some pieces are further along than others.
 :::
-
-## Get access
-
-To try JupyterHealth, [sign up for the demo Exchange](https://jupyterhealth-hub.readthedocs.io/en/latest/sign-up/) and then [log in to the demo Hub](https://jupyterhealth-hub.readthedocs.io/en/latest/log-in/).
-The demo Exchange and Hub are hosted at UC Berkeley.
-Other institutions may set up access differently, for example by connecting their own Exchange to an existing computing environment instead of a Hub.
 
 ## What do you want to do?
 
