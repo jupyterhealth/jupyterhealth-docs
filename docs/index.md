@@ -15,7 +15,7 @@ It has three main pieces:
 
 ## Try JupyterHealth: Berkeley demo
 
-You can try JupyterHealth using the Berkeley demo Exchange and Hub. The Exchange contains sample data that you can explore in a notebook on the Hub. You'll need an invite code to create an account. If you weren't given one, ask in the [#jupyterhealth Zulip channel](https://jupyter.zulipchat.com/#narrow/channel/531270-jupyterhealth).
+You can try JupyterHealth using the Berkeley demo {term}`Exchange` and {term}`Hub`. The Exchange contains sample data that you can explore in a notebook on the Hub. You'll need an invite code to create an account. If you weren't given one, ask in the {term}`#jupyterhealth Zulip channel <Zulip>`.
 
 **Getting started takes two steps:**
 
